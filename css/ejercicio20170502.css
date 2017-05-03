@@ -1,0 +1,84 @@
+nav ul li{
+
+    width:150px;
+    text-align: center;
+    list-style: none;
+    border:1px solid white;
+    background-color:darkseagreen;
+    transition: background-color 2s; /*para que el efecto hover se cambie cada 2 segs*/
+}
+nav ul li:hover{ /*Se les llama pseudoselectores, se activa cuando se pasa el raton por encima*/
+    background-color: red;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+.flex-container{
+    display: flex;
+}
+section{
+    flex-direction: column;
+    justify-content: center;
+}
+section > div {
+    flex-wrap: wrap;
+
+}
+article{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+article > div:first-child{
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+footer{
+    border:1px solid black;
+    background-color: black;
+    color: white;
+}
+#estaciones > article {
+
+    text-align: center;
+    width:33%;
+}
+
+#estaciones > article > div:nth-child(3) {
+        display: block;
+}
+#estaciones > article > div:nth-child(4) {
+        display: none;
+}
+
+@media screen and (max-width: 900px) {
+    #estaciones,nav ul li{
+
+        width: auto;
+        display:flex;
+        flex-direction: column;
+    }
+    nav ul li{
+        width:180px
+    }
+
+    #estaciones > article > div:nth-child(3) {
+        display: none;
+    }
+    #estaciones > article > div:nth-child(4) {
+        display: block;
+    }
+
+
+
+}

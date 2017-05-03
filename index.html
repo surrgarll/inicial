@@ -11,7 +11,7 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        f
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -20,7 +20,7 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <header><h1>Bienvenido a mi Web</h1></header>
+
         <nav>
             <ul class="clearfix"><!-- paramos el efecto float -->
                 <li><a href="#listas_ordenadas">Listas ordenadas</a></li>
@@ -29,6 +29,8 @@
             </ul>
 
         </nav>
+        <div id="wrapper">
+        <header><h1>Bienvenido a mi Web</h1></header>
         <main>
                 <section id="listas_ordenadas">
                     <header><h2>Listas ordenadas</h2></header>
@@ -108,7 +110,7 @@
                 <div class="clearfix">
                     <article>
                         <header><h3>Esto es el artículo primero</h3></header>
-                        <div class="bloque_imagen">Bloque para imagen</div>
+                        <div><video></video></div>
                         <div>
                             <div>....</div>
                             <button>Leer más</button>
@@ -116,7 +118,7 @@
                     </article>
                     <article>
                         <header><h3>Este es el artículo segundo</h3></header>
-                        <div class="bloque_imagen">Bloque para imagen</div>
+                        <div><video></video></div>
                         <div>
                             <div>....</div>
                             <button>Leer más</button>
@@ -124,7 +126,7 @@
                     </article>
                     <article>
                         <header><h3>Este es el artículo tercero</h3></header>
-                        <div class="bloque_imagen">Bloque para imagen</div>
+                        <div><video></video></div>
                         <div>
                             <div>....</div>
                             <button>Leer más</button>
@@ -132,11 +134,58 @@
                     </article>
                 </div>
             </section>
+            <section>
+                <header><h2>Ejemplo con Flex</h2></header>
+                <article class="flex-container">
+                    <header><h3>Enrrique</h3></header>
+                    <div class="flex-container">
+                        <div>
+                            <img src=""/>
+                        </div>
+                        <div>
+                            <p>Nombre completo</p>
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
+                </article>
+                <article class="flex-container">
+                    <header><h3>Enrrique</h3></header>
+                    <div class="flex-container">
+                        <div>
+                            <img src=""/>
+                        </div>
+                        <div>
+                            <p>Nombre completo</p>
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
+                </article>
+                <article class="flex-container">
+                    <header><h3>Enrrique</h3></header>
+                    <div class="flex-container">
+                        <div>
+                            <img src=""/>
+                        </div>
+                        <div>
+                            <p>Nombre completo</p>
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
+                </article>
+
+            </section>
 
         </main>
         <footer>
 
         </footer>
+        </div>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>

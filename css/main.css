@@ -130,6 +130,17 @@ table tfoot tr{
     border-color: black;
 
 }
+nav{
+    position:fixed;
+    top:0;
+    height: 30px;
+}
+
+#wrapper{
+    position:relative;
+    top:30px;
+
+}
 nav ul li{
     float:left;
     width:150px;
@@ -139,26 +150,51 @@ nav ul li{
     background-color:darkseagreen;
     transition: background-color 2s; /*para que el efecto hover se cambie cada 2 segs*/
 }
-nav ul li:hover{ /*se activa cuando se pasa el raton por encima*/
+nav ul li:hover{ /*Se les llama pseudoselectores, se activa cuando se pasa el raton por encima*/
     background-color: red;
 }
 a{
     color:black;
     text-decoration: none;
 }
+main{
+    margin: 2px 3px 1px 0px;
+}
+section:nth-child(odd){
+
+}
+section:nth-child(even){
+
+}
 #ejer1 article {
     float:left;
     width:33%;
-    border:1px solid black;
+    box-sizing:border-box;
+    padding-left:20px;
 }
-.bloque_imagen{
+#ejer1 article >div{ /*restringue al 1er nivel de div*/
     float:left;
-    background-color:darkseagreen;
+    box-sizing:border-box;
+    width: 80%;
     height: 200px;
-
 }
 
+#ejer1 article >div:last-child{
+    width:20%;
+}
+#ejer1 article video{
+    width:100%;
+}
+#ejer1 article > div button{
+    height: 35px;
+}
+main section:last-child{
+    display:flex;
 
+}
+main section:last-child article{
+    display:flex;
+}
 
 
 
